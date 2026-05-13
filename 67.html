@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+    <style>
+        div {
+            margin: 10px;
+            padding: 5px;
+            border: 2px solid green;
+        }
+
+        #wrapper {
+            border-color: blueviolet;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="test">text</div>
+    </div>
+
+    <p id="one"></p>
+    <p id="two"></p>
+    <p id="three"></p>
+    <p id="four"></p>
+
+    <script>
+        $(document).ready(function () {
+            let w = $('#wrapper').width();
+            let h = $('#wrapper').height();
+            $('#one').text('Без отступов: ' + w + 'x' + h);
+
+            let iw = $('#wrapper').innerWidth();
+            let ih = $('#wrapper').innerHeight();
+            $('#two').text('С учетом padding: ' + iw + 'x' + ih);
+        });
+    </script>
+</body>
+
+</html>
