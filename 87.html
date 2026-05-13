@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+<div>
+  <b class="www">Этот текст станет красным</b>
+  <p>Обычный текст</p>
+  <b class="www">
+    И этот текст станет красным,
+    а <span class="test">большой</span> 
+  </b>
+  <span class="test">Этот текст не изменится</span>
+</div>
+
+</div>
+   <script>
+$('b.www').css('color', 'red').find('.test').css('fontSize', '30px');
+
+
+    </script>
+
+</body>
+
+</html>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+<ul>
+    <li>1 пункт</li>
+    <li>2 пункт</li>
+    <li id="test">3 пункт</li>
+    <li id="first">4 пункт</li>
+    <li>5 пункт</li>
+    <li>6 пункт</li>
+
+</ul>
+   <script>
+let num = $('li').index($('#test'));
+alert(num);
+
+let num1 = $('li').index($('#first'));
+alert(num1);
+    </script>
+
+</body>
+
+</html>

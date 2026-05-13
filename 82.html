@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+<ul>
+<p>outside</p>
+<div>
+	<p>inside</p>
+	<p><b>inside</b></p>
+	<p id="test">inside</p>
+	<p>inside</p>
+	<p>inside</p>
+</div>
+<p>outside</p>
+</ul>
+   <script>
+$('#test').parent().css('color','red');
+$('b').parent().css('color','red');
+    </script>
+
+</body>
+
+</html>
